@@ -1,0 +1,337 @@
+:root {
+--color-main: #a474ff;
+--color-main-second: #17f1d1;
+--color-main-third: #ffab70;
+--color-main-fourth: #61dafb;
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+.home-btn-container{
+    text-align: center;
+}
+.card-header-container{
+    width: 100%;
+    height: 80vh;
+    margin-bottom: 10px;
+}
+.gif-card-background{
+    height: 100%;
+    width: 100%;
+    background: url(guyCoding.gif);
+    clip-path: ellipse(80% 95% at 50% 1%);
+    position: absolute;
+    opacity: 0.2;
+    z-index: -1;
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+.card-header{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(184deg,var(--color-main-fifth), var(--color-main-third), var(--color-main),var(--color-main-fourth));
+	position: relative;
+	background-size: 300% 300%;
+	animation: color 4s ease-in-out infinite;
+	z-index: 0;
+    padding: 0 30px;
+    clip-path: ellipse(80% 95% at 50% 1%);
+}
+.card-header h1{
+    margin-top: -50px;
+    font-size: 3.8em;
+    margin-bottom: 10px;
+}
+.card-header p{
+    font-size: 1.25em;
+    color: rgb(240, 240, 240)
+}
+.card-header p a{
+    text-decoration: none;
+    color: #088395;
+    transition: 0.2s ease-out;
+}
+.card-header p a:hover{
+    text-decoration: solid 1px;
+    text-decoration: underline solid;
+    text-shadow: -1.5px 1.5px #00b7ff;
+}
+.main-card {
+    width: 100%;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%
+}
+
+.cards-container {
+    width: 100%;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 40px); /* full width with margin */
+    margin: 20px; /* space between cards */
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+.upper-card {
+    display: flex;
+    align-items: center;
+}
+/* Image Backgrounds */
+.freecodecamp {
+    background: url("https://play-lh.googleusercontent.com/MoaYYQjGtmGLhG9HbjCDKyj44kwHj1HfbCI2Am70elRm35vJ-u4y4X5uEJjP97MAAsU");
+}
+
+.odin-project {
+    background: url("https://asset.brandfetch.io/idqq2v1naO/idxqyQyT9i.png");
+}
+
+.cs-50 {
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXqjPNtfM-ot5YLNcWT2hF4iJWeOYg50nzxA&s");
+}
+
+.codecademy {
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTes7fEjQLQnSQuCnUT9IowSjNprCGttC5e0w&s");
+}
+
+.udemy {
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQyRNaSvwqmBxFJjS9--mgdBBZeocmsUHj-A&s");
+}
+
+.solo-learn {
+    background: url("https://play-lh.googleusercontent.com/P6Ixu0T8hx2x80aCURUdcMW8poVuA4J0JQf8fw-XEa_NgzNSGUC1SNLkbT2ioo0lXfkC");
+}
+
+.card-img {
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.card-desc {
+    color: #333;
+    font-size: 2em;
+    margin: 0 15px;
+    flex: 1; /* take up remaining space */
+}
+
+.middle-card {
+    margin-top: 15px;
+}
+
+.card-website-name {
+    font-size: 2em;
+    margin: 0;
+    margin-top: -6px;
+    margin-bottom: -2px;
+}
+
+.website-link {
+    text-decoration: none;
+    color: #999;
+    transition: 0.2s ease-out;
+}
+
+.website-link:hover {
+    text-decoration: wavy;
+    color: rgb(68, 78, 171);
+}
+
+.card-company-title {
+    color: #333;
+    font-size: 4.3em;
+    margin: 5px 0 0 0;
+    font-weight: bold;
+}
+
+.bottom-card {
+    display: flex;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+
+.type-holder {
+    background: #c2c2c2;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin-right: 30px;
+    margin-bottom: 10px; /* for wrapping */
+}
+
+.type-holder p {
+    margin: 0;
+    color: #333;
+    font-size: 1.8em;
+}
+
+.css-type {
+    background: rgb(102, 138, 255);
+}
+
+.js-type {
+    background: var(--color-main-third);
+}
+
+.ruby-type {
+    background: rgb(255, 72, 72);
+}
+
+.nodejs-type {
+    background: rgb(50, 201, 50);
+}
+
+.react-type {
+    background: var(--color-main-fourth);
+}
+
+.python-type {
+    background: linear-gradient(90deg, #306998, #FFD43B);
+}
+
+.php-type {
+    background: #4479A1;
+}
+
+.scratch-type {
+    background: #FFA500;
+}
+
+.mysql-type {
+    background: rgb(215, 175, 207);
+}
+
+.web3-type {
+    background: rgb(54, 112, 237);
+}
+
+.java-type {
+    background: rgb(255, 0, 0);
+}
+
+.kotlin-type {
+    background: rgb(255, 78, 246);
+}
+
+.typescript-type {
+    background: rgb(51, 132, 246);
+}
+
+.cplus-type {
+    background: rgb(45, 0, 179);
+}
+
+.cplus-type > p {
+    color: white;
+}
+
+.c-type {
+    background: rgb(0, 0, 193);
+}
+
+.c-type > p {
+    color: white;
+}
+
+.Button-home-footer-card{
+  font-family: sans-serif;
+  font-size: 30px;
+  line-height: 1.5;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+  cursor: pointer;
+  border: 2px solid var(--color-main);
+  border-radius: 8px;
+  padding: 2px 26px;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  height: 50px;
+}
+[type="button"]{
+    background-color: transparent;
+    background-image: none;
+}
+.Button-home-footer-card:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: -40%;
+    width: 300%;
+    height: 400%;
+    background-color: var(--color-main);
+    transition: all 0.3s ease-in-out;
+    transform: rotate(-45deg);
+  }
+  
+.Button-home-footer-card:hover:before {
+    top: 0;
+    left: -160%;
+    width: 380%;
+    height: 800%;
+  }
+  
+.Button-home-footer-card > span {
+    transition: all 0.3s ease-in-out;
+    display: block;
+    height: 100%;
+    position: relative;
+    top: 0;
+  }
+  
+.Button-home-footer-card:hover span {
+    top: -100% !important;
+  }
+  
+.Button-home-footer-card  span:after {
+    content: "Back Home";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+  }
+  
+
+.card-footer{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    background: linear-gradient(45deg,var(--color-main-fifth), var(--color-main-third), var(--color-main-fifth),var(--color-main-second));
+	background-size: 300% 300%;
+	animation: color 4s ease-in-out infinite;
+	z-index: 0;
+    margin-top: 10px;
+}
+.card-footer p{
+    margin-left: 40px;
+    font-size: 1.2rem;
+    color: whitesmoke;
+}

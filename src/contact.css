@@ -1,0 +1,145 @@
+.main-contact{
+    position: relative;
+	font-family: Poppins, system-ui;
+	height: 100vh !important;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-contact::before{
+    content: "";
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(guy2coding.gif);
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+    opacity: 0.15; 
+    z-index: -2;
+}
+.contact-body{
+    text-align: center;
+    color: whitesmoke
+}
+.contact-title-text{
+    font-size: 4.5em;
+    margin-bottom: 20px
+}
+.contact-title-sub-text{
+    color: var(--color-main-second);
+    font-size: 1.5em
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    background: linear-gradient(45deg,var(--color-main-fifth), var(--color-main-third), var(--color-main-fifth),var(--color-main-second));
+	background-size: 300% 300%;
+	animation: color 4s ease-in-out infinite;
+	z-index: 0;
+}
+.footer-trademark > p{
+    margin-left: 40px;
+    font-size: 1.2rem;
+    color: whitesmoke;
+    font-family: Arial
+}
+.socials{
+    width: 100%;
+    margin-top: 30px;
+}
+.social-lists{
+    list-style-type: none;
+}
+.social-li{
+    display: inline-block;
+    margin: 0 40px;
+}
+.icon{
+    font-size: 50px;
+    transition:0.2s ease-out;
+}
+.icon:hover{
+    transform: translateY(4px)
+}
+.fa-instagram:hover{
+    color: #ffab70;
+}
+.fa-envelope:hover{
+    color: #a474ff;
+}
+.fa-linkedin:hover{
+    color: #6e61fb;
+}
+.fa-instagram:active{
+    color: #ed6503;
+}
+.fa-envelope:active{
+    color: #8341ff;
+}
+.fa-linkedin:active{
+    color: #3826ff;
+}
+@media (max-width: 768px){
+    .contact-title-text{
+        font-size: 4.3em;
+        margin-bottom: 15px
+    }
+    .contact-title-sub-text{
+        font-size: 1.4em
+    }
+    .icon{
+        font-size: 45px
+    }
+}
+@media (max-width: 560px){
+    .contact-title-text{
+        font-size: 4em;
+        margin-bottom: 20px
+    }
+    .contact-title-sub-text{
+        font-size: 1.2em
+    }
+    .icon{
+        font-size: 38px
+    }
+}
+@media (max-width: 560px){
+    .contact-title-text{
+        font-size: 3.75em;
+        margin-bottom: 20px
+    }
+    .contact-title-sub-text{
+        font-size: 1.1em
+    }
+    .icon{
+        font-size: 35px
+    }
+}
+@media (max-width: 345px){
+    .contact-title-text{
+        font-size: 3.5em;
+        margin-bottom: 10px
+    }
+    .contact-title-sub-text{
+        font-size: 1.1em
+    }
+    .icon{
+        font-size: 30px;
+    }
+    .social-li{
+        margin: 0 30px
+    }
+    .socials{
+        margin-top: 20px;
+    }
+}
